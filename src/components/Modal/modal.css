@@ -39,3 +39,19 @@
     padding: 20px;
     border-radius: 5px;
 }
+.modal__button__container{
+    position: relative;
+}
+.modal__button{
+    background: red;
+    color: white;
+    outline: none;
+    position: absolute;
+
+    top: -15px;
+    right: -15px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+}

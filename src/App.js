@@ -15,19 +15,19 @@ function App() {
     // console.log('updated', updateBack);
 
     return (
-        <div>
+        <div style = {{width: "100%"}}>
             <div
                 onClick={() => setIsModal(!isModal)}
                 style={{
-                    background: `${updateBack.includes('/') ? `url(${updateBack}) no-repeat` : updateBack}`,
-                    transition: 'background 0.5s ease-in-out'
+                    background: `${updateBack.includes('/') ? `url(${updateBack}) no-repeat center` : updateBack}`,
+                    transition: 'background 0.5s ease-in-out',
                 }}>
-                <div>
-                    <img style={{width: '450px', height: '250px'}} src={bycicle} alt="bycicle"/>
+                <div style={{display: "flex", justifyContent: "center"} }>
+                    <img style={{width: '45%', height: '40%'}} src={bycicle} alt="bycicle"/>
                 </div>
             </div>
             <Modal isOpen={isModal} onClose={() => setIsModal(!isModal)}>
-                <div style={{display: 'flex'}}>
+                <div style={{display: 'flex', marginTop: '25px'}}>
                     {
                         backgrounds.map(item => {
                             console.log(item.includes('/'));
